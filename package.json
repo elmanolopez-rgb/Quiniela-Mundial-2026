@@ -1,0 +1,17 @@
+{
+  "name": "quiniela-realtime",
+  "version": "1.0.0",
+  "description": "Quiniela Mundial 2026 con sincronización en tiempo real",
+  "main": "index.js",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "ws": "^8.18.0"
+  }
+}

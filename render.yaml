@@ -1,0 +1,14 @@
+# Render.com auto-deploy config
+services:
+  - type: web
+    name: quiniela-mundial-2026
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /healthz
+    envVars:
+      - key: UPSTASH_REDIS_REST_URL
+        sync: false
+      - key: UPSTASH_REDIS_REST_TOKEN
+        sync: false
